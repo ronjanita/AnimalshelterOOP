@@ -4,17 +4,13 @@ class Animal
 {
     public string Name;
     public int Age;
-    static void Main()
-    {
-        MakeSound();
-        ToString;
-    }
     public virtual void MakeSound()
     {
-
+        Console.WriteLine("The animal makes a sound.");
     }
     public override string ToString()
     {
+        Console.WriteLine($"{Name},{Age}years old.");
         return Name;
     }
 }
