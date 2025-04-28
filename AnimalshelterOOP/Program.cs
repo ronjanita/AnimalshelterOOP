@@ -1,16 +1,12 @@
-﻿using System.Runtime.InteropServices.Marshalling;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-class Animal
+namespace AnimalshelterOOP
 {
-    public string Name;
-    public int Age;
-    public virtual void MakeSound()
+    internal class Program
     {
-        Console.WriteLine("The animal makes a sound.");
-    }
-    public override string ToString()
-    {
-        Console.WriteLine($"{Name},{Age}years old.");
-        return Name;
     }
 }
