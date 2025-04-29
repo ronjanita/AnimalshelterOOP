@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace AnimalshelterOOP
 {
@@ -10,11 +11,10 @@ namespace AnimalshelterOOP
     {
         static void Main()
         {
-            dog newDog = new dog();
-            lion newLion = new lion();
-            okapi newOkapi = new okapi();
-            whaleshark newWhalshark = new whaleshark();
-
+            Dog newDog = new("leo", 1);
+            Lion newLion = new("rocky",44);
+            Okapi newOkapi = new("rudolf mc donald", 998);
+            Whaleshark newWhalshark = new("sally", 72);
         }
     }
-}
+} 
