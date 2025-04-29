@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace AnimalshelterOOP
 {
-    internal class lion:Animal
+    internal class Lion:Animal
     {
+        public Lion(string name, int age) : base(name, age) { }
         public override void MakeSound()
         {
-            Console.WriteLine("rawr");
-            Name = "lion";
+            Console.WriteLine("rawr");  
         }
     }
 }

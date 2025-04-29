@@ -1,16 +1,25 @@
 ﻿using System.Runtime.InteropServices.Marshalling;
 
-class Animal
+namespace AnimalshelterOOP
 {
-    public string Name;
-    public int Age;
-    public virtual void MakeSound()
+    public class Animal
     {
-        Console.WriteLine("The animal makes a sound.");
+        public string Name;
+        public int Age;
+        public Animal(string name, int age)
+        {
+            Name = name; 
+            Age = age;
+        }
+        public virtual void MakeSound()
+        {
+            Console.WriteLine("The animal makes a sound.");
+        }
+        public override string ToString()
+        {
+            return$"{Name},{Age}years old.";
+         
+        }
     }
-    public override string ToString()
-    {
-        Console.WriteLine($"{Name},{Age}years old.");
-        return Name;
-    }
+
 }
