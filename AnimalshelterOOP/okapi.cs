@@ -8,7 +8,7 @@ namespace AnimalshelterOOP
 {
     internal class Okapi:Animal
     {
-        public Okapi(string name, int age) : base(name, age) { }
+        public Okapi(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()
         {
             Console.WriteLine("chuff");

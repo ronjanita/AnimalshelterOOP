@@ -8,7 +8,7 @@ namespace AnimalshelterOOP
 {
     internal class Whaleshark:Animal
     {
-        public Whaleshark(string name, int age) : base(name, age) { }
+        public Whaleshark(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()
         {
             Console.WriteLine("gluckgluck");

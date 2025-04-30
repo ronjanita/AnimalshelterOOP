@@ -8,7 +8,7 @@ namespace AnimalshelterOOP
 {
     internal class AnimalShelter
     {
-        List<Animal> animalsInShelter;
+        public List<Animal> animalsInShelter;
         
         public void AddAnimal(Animal animal)   //fügt ein tier zu liste hinzu
         {

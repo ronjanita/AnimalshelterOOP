@@ -8,7 +8,7 @@ namespace AnimalshelterOOP
 {
     internal class Lion:Animal
     {
-        public Lion(string name, int age) : base(name, age) { }
+        public Lion(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()
         {
             Console.WriteLine("rawr");  

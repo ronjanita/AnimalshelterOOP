@@ -6,10 +6,12 @@ namespace AnimalshelterOOP
     {
         public string Name;
         public int Age;
-        public Animal(string name, int age)
+        public string Species;
+        public Animal(string name, int age, string species)
         {
             Name = name; 
             Age = age;
+            Species = species;
         }
         public virtual void MakeSound()
         {
@@ -17,7 +19,7 @@ namespace AnimalshelterOOP
         }
         public override string ToString()
         {
-            return$"{Name},{Age}years old.";
+            return$"{Species},{Name},{Age}years old.";
          
         }
     }
