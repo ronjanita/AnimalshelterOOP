@@ -8,22 +8,25 @@ namespace AnimalshelterOOP
 {
     internal class AnimalShelter
     {
-        List<Animal> animals;
+        List<Animal> animalsInShelter;
+        
         public void AddAnimal(Animal animal)   //fügt ein tier zu liste hinzu
         {
-            Console.WriteLine("Enter animal you want to add to list:");
-            Console.ReadLine();
-            animals.Add(animal);
+            animalsInShelter.Add(animal);
         }
-        public void AdoptAnimal(string name) //entfernt ein tier anhand des namens aus der liste
+        public void AdoptAnimal(string searchingName) //entfernt ein tier anhand des namens aus der liste
         {
-            Console.WriteLine("Enter animal you want to remove from list:");
-            Console.ReadLine();
-
+            foreach (Animal animalToCheck in animalsInShelter)
+            {
+                if (animalToCheck.Name == searchingName)
+                {
+                    animalsInShelter.Remove(animalToCheck);
+                }
+            }
         }
         public void ShowAllAnimals()
         {
-
+            Console.WriteLine($"here are all animals currently in the shelter: {animalsInShelter}");
         }
     }
 }
