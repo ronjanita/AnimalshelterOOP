@@ -19,7 +19,7 @@ namespace AnimalshelterOOP
             {
                 case "1":
                     Console.WriteLine("Please enter the species of the new animal:");
-                    string species = Console.ReadLine();
+                    string species = Console.ReadLine().ToLower();
                     Console.WriteLine("Please enter the name of the animal:");
                     string nameNewAnimal = Console.ReadLine();
                     Console.WriteLine("Please enter the age of the animal:");
