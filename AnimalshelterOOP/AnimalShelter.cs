@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalshelterOOP
 {
-    internal class AnimalShelter
+    public class AnimalShelter
     {
         public List<Animal> animalsInShelter = new List<Animal>();
         
@@ -23,10 +23,13 @@ namespace AnimalshelterOOP
                     animalsInShelter.Remove(animalToCheck);
                 }
             }
+
+            //Animal searchedAnimal = animalsInShelter.FirstOrDefault(animalToCheck => animalToCheck.Name == searchingName);
+            //animalsInShelter.Remove(searchedAnimal);
         }
         public void ShowAllAnimals()
         {
             Console.WriteLine($"here are all animals currently in the shelter: {animalsInShelter}");
-        }
+        }   
     }
 }
