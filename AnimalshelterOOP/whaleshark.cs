@@ -13,5 +13,10 @@ namespace AnimalshelterOOP
         {
             Console.WriteLine("gluckgluck");
         }
+        public override string ToString()
+        {
+            return $"{Species},{Name},{Age}years old.";
+
+        }
     }
 }

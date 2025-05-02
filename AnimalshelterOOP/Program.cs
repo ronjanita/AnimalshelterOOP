@@ -12,40 +12,37 @@ namespace AnimalshelterOOP
         static private AnimalShelter animalShelter = new AnimalShelter();
 
         static void Main()
-        { 
+        {
+            bool playAgain = true;
             Console.WriteLine("Welcome to the Animal shelter");
             CreateExistingAnimals();
-            Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3)");
-            string selection = Console.ReadLine().ToLower();
-
-            switch (selection)
+            while (playAgain)
             {
-                case "1":
-                    EnterNewAnimal();
-                    break;
-                case "2":
-                    AdoptNewAnimal();
-                    break;
-                case "3":
-                    animalShelter.ShowAllAnimals();
-                    break;
+                RunGame();
+                Console.WriteLine("Do you want to end this program? y/n");
+                string input = Console.ReadLine().ToLower();
+
+                if(input == "y")
+                {
+                    playAgain = false;
+                }
             }
         }
 
         private static void CreateExistingAnimals()
         {
             Dog newDog = new("leo", 1, "dog");
+            Console.WriteLine(newDog);
             newDog.MakeSound();
-            newDog.ToString();
             Lion newLion = new("rocky", 44, "lion");
+            Console.WriteLine(newLion);
             newLion.MakeSound();
-            newLion.ToString();
             Okapi newOkapi = new("rudolf mc donald", 998, "okapi");
+            Console.WriteLine(newOkapi);
             newOkapi.MakeSound();
-            newOkapi.ToString();
             Whaleshark newWhalshark = new("sally", 72, "whaleshark");
+            Console.WriteLine(newWhalshark);
             newWhalshark.MakeSound();
-            newWhalshark.ToString();
 
             animalShelter.AddAnimal(newDog);
             animalShelter.AddAnimal(newLion);
@@ -90,6 +87,25 @@ namespace AnimalshelterOOP
             Console.WriteLine("Please enter the name of the animal you want to adopt:");
             string adoptedAnimalName = Console.ReadLine().ToLower();
             animalShelter.AdoptAnimal(adoptedAnimalName);
+        }
+
+        static void RunGame()
+        {
+            Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3)");
+            string selection = Console.ReadLine().ToLower();
+
+            switch (selection)
+            {
+                case "1":
+                    EnterNewAnimal();
+                    break;
+                case "2":
+                    AdoptNewAnimal();
+                    break;
+                case "3":
+                    animalShelter.ShowAllAnimals();
+                    break;
+            }
         }
     }
 } 

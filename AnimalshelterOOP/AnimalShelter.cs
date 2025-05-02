@@ -8,7 +8,7 @@ namespace AnimalshelterOOP
 {
     public class AnimalShelter
     {
-        public List<Animal> animalsInShelter = new List<Animal>();
+        public List<Animal> animalsInShelter = new();
         
         public void AddAnimal(Animal animal)   //fügt ein tier zu liste hinzu
         {
@@ -16,12 +16,17 @@ namespace AnimalshelterOOP
         }
         public void AdoptAnimal(string searchingName) //entfernt ein tier anhand des namens aus der liste
         {
-            foreach (Animal animalToCheck in animalsInShelter)
+            Animal foundAnimal = null;
+            foreach (Animal animalToCheck in animalsInShelter)  // rückwerts durch lsite itieren?
             {
-                if (animalToCheck.Name == searchingName)
+                if (animalToCheck.Name == searchingName)   
                 {
-                    animalsInShelter.Remove(animalToCheck);
+                    foundAnimal = animalToCheck;
                 }
+            }
+            if (foundAnimal != null)
+            {
+                animalsInShelter.Remove(foundAnimal);
             }
 
             //Animal searchedAnimal = animalsInShelter.FirstOrDefault(animalToCheck => animalToCheck.Name == searchingName);
@@ -29,7 +34,10 @@ namespace AnimalshelterOOP
         }
         public void ShowAllAnimals()
         {
-            Console.WriteLine($"here are all animals currently in the shelter: {animalsInShelter}");
+            foreach(Animal animal in animalsInShelter)
+            {
+                Console.WriteLine($"here are all animals currently in the shelter: {animal}");
+            }
         }   
     }
 }

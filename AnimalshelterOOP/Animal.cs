@@ -19,8 +19,8 @@ namespace AnimalshelterOOP
         }
         public override string ToString()
         {
-            return$"{Species},{Name},{Age}years old.";
-         
+            return $"{Species},{Name},{Age}years old.";
+
         }
     }
 
