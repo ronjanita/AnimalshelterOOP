@@ -38,6 +38,22 @@ namespace AnimalshelterOOP
             {
                 Console.WriteLine($"here are all animals currently in the shelter: {animal}");
             }
-        }   
+        } 
+        
+        public void GreetAnimal(string searchingSpecies)
+        {
+            Animal foundAnimal = null;
+            foreach(Animal animalToCheck in animalsInShelter)
+            {
+                if (animalToCheck.Species == searchingSpecies)
+                {
+                    foundAnimal = animalToCheck;
+                }
+            }
+            if (foundAnimal != null)
+            {
+                foundAnimal.MakeSound();
+            }
+        }
     }
 }

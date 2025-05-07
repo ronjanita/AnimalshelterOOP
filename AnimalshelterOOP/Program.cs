@@ -9,7 +9,7 @@ namespace AnimalshelterOOP
 {
     internal class Program
     {
-        static private AnimalShelter animalShelter = new AnimalShelter();
+        static public AnimalShelter animalShelter = new AnimalShelter();
 
         static void Main()
         {
@@ -29,7 +29,7 @@ namespace AnimalshelterOOP
             }
         }
 
-        private static void CreateExistingAnimals()
+        public static void CreateExistingAnimals()
         {
             Dog newDog = new("leo", 1, "dog");
             Console.WriteLine(newDog);
@@ -89,9 +89,16 @@ namespace AnimalshelterOOP
             animalShelter.AdoptAnimal(adoptedAnimalName);
         }
 
+        public void GreetNewAnimal()
+        {
+            Console.WriteLine("enter the name of the species you want to greet:");
+            string animalGreet = Console.ReadLine().ToLower();
+            animalShelter.GreetAnimal(animalGreet);
+        }
+
         static void RunGame()
         {
-            Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3)");
+            Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3) \n - greet animal(4)");
             string selection = Console.ReadLine().ToLower();
 
             switch (selection)
@@ -104,6 +111,10 @@ namespace AnimalshelterOOP
                     break;
                 case "3":
                     animalShelter.ShowAllAnimals();
+                    break;
+                case "4":
+                    Program program = new();
+                    program.GreetNewAnimal();
                     break;
             }
         }
