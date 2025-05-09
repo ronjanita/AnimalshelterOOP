@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalshelterOOP
 {
-    internal class Amphibiansprogram
+    internal class Fishsprogram
     {
         static public ShelterAmphibians amphibianShelter = new ShelterAmphibians();
         public static void CreateExistingAmphibians()
@@ -92,7 +92,7 @@ namespace AnimalshelterOOP
                     amphibianShelter.ShowAllAnimals();
                     break;
                 case "4":
-                    Amphibiansprogram amphibianprogram = new();
+                    Fishsprogram amphibianprogram = new();
                     amphibianprogram.GreetNewAmphibian();
                     break;
             }

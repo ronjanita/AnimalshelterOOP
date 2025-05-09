@@ -49,12 +49,12 @@ namespace AnimalshelterOOP
                         fishShelter.AddAnimal(newTigersharkToAdd);
                         break;
                     case "okapi":
-                        Toad newToadToAdd = new Toad(nameNewAnimal, ageNewAnimal, species);
-                        fishShelter.AddAnimal(newToadToAdd);
+                        Stingray newStingrayToAdd = new Stingray(nameNewAnimal, ageNewAnimal, species);
+                        fishShelter.AddAnimal(newStingrayToAdd);
                         break;
                     case "cat":
-                        Caecilian newCaecilianToAdd = new Caecilian(nameNewAnimal, ageNewAnimal, species);
-                        fishShelter.AddAnimal(newCaecilianToAdd);
+                        Toadfish newToadfishToAdd = new Toadfish(nameNewAnimal, ageNewAnimal, species);
+                        fishShelter.AddAnimal(newToadfishToAdd);
                         break;
                     default:
                         Animal newAnimal = new Animal(nameNewAnimal, ageNewAnimal, species);
@@ -62,20 +62,20 @@ namespace AnimalshelterOOP
                         break;
                 }
             }
-            static void AdoptNewAmphibian()
+            static void AdoptNewFish()
             {
                 Console.WriteLine("Please enter the name of the animal you want to adopt:");
-                string adoptedAmphibianName = Console.ReadLine().ToLower();
-                fishShelter.AdoptAnimal(adoptedAmphibianName);
+                string adoptedFishName = Console.ReadLine().ToLower();
+                fishShelter.AdoptAnimal(adoptedFishName);
             }
 
-            public void GreetNewAmphibian()
+            public void GreetNewFish()
             {
                 Console.WriteLine("enter the name of the species you want to greet:");
-                string amphibianGreet = Console.ReadLine().ToLower();
-                fishShelter.GreetAnimal(amphibianGreet);
+                string fishGreet = Console.ReadLine().ToLower();
+                fishShelter.GreetAnimal(fishGreet);
             }
-            static void RunGameAmphibian()
+            static void RunGameFish()
             {
                 Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3) \n - greet animal(4)");
                 string selection = Console.ReadLine().ToLower();
@@ -83,17 +83,17 @@ namespace AnimalshelterOOP
                 switch (selection)
                 {
                     case "1":
-                        EnterNewAmphibian();
+                        EnterNewFish();
                         break;
                     case "2":
-                        AdoptNewAmphibian();
+                        AdoptNewFish();
                         break;
                     case "3":
                         fishShelter.ShowAllAnimals();
                         break;
                     case "4":
-                        Amphibiansprogram amphibianprogram = new();
-                        amphibianprogram.GreetNewAmphibian();
+                        Fishsprogram fishprogram = new();
+                        fishprogram.GreetNewFish();
                         break;
                 }
             }
