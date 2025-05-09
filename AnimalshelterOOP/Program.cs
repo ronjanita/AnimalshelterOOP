@@ -9,7 +9,6 @@ namespace AnimalshelterOOP
 {
     internal class Program
     {
-        static public ShelterMammal animalShelter = new ShelterMammal();
 
         static void Main()
         {
