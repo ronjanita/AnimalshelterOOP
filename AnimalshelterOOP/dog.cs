@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalshelterOOP
 {
-   public class Dog : Animal
+   internal class Dog : Animal
     {
         public Dog(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()

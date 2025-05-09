@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace AnimalshelterOOP
 {
-    public class Frog:Animal
+    internal class Frog:Animal
     {
         public Frog(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()
