@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace AnimalshelterOOP
 {
-    public class Frog:Animal
+    public class Anaconda:Animal
     {
-        public Frog(string name, int age, string species) : base(name, age, species) { }
+        public Anaconda(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()
         {
-            Console.WriteLine("quackquackS");
+            Console.WriteLine("zrrzrr");
         }
         public override string ToString()
         {
