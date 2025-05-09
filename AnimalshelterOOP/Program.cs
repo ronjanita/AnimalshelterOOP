@@ -9,7 +9,7 @@ namespace AnimalshelterOOP
 {
     internal class Program
     {
-        static public AnimalShelter animalShelter = new AnimalShelter();
+        static public ShelterMammal animalShelter = new ShelterMammal();
 
         static void Main()
         {
@@ -116,7 +116,7 @@ namespace AnimalshelterOOP
                     Program program = new();
                     program.GreetNewAnimal();
                     break;
-            }
+            }  
         }
     }
 } 
