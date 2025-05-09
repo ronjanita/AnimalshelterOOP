@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace AnimalshelterOOP
 {
-   internal class Dog : Animal
+    internal class Caecilian:Animal
     {
-        public Dog(string name, int age, string species) : base(name, age, species) { }
+        public Caecilian(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()
         {
-            Console.WriteLine("wuff");
+            Console.WriteLine("I prefeer staying silent.");
         }
         public override string ToString()
         {
