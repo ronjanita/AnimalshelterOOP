@@ -13,19 +13,12 @@ namespace AnimalshelterOOP
         {
             Frog newFrog = new Frog("hans", 7, "frog");
             Console.WriteLine(newFrog);
-            newFrog.MakeSound();
-
             Anaconda newAnaconda = new Anaconda("lisa", 2, "Anaconda");
             Console.WriteLine(newAnaconda);
-            newAnaconda.MakeSound();
-
             Toad newToad = new Toad("peter", 6, "Toad");
             Console.WriteLine(newToad);
-            newToad.MakeSound();
-
             Caecilian newCaecilian = new Caecilian("jasper", 10, "caecilian");
             Console.WriteLine(newCaecilian);
-            newCaecilian.MakeSound();
 
             amphibianShelter.AddAnimal(newFrog);
             amphibianShelter.AddAnimal(newAnaconda);
@@ -83,9 +76,9 @@ namespace AnimalshelterOOP
         }
         public void RunGameAmphibian()
         {
+            CreateExistingAmphibians();
             Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3) \n - greet animal(4)");
             string selection = Console.ReadLine().ToLower();
-            CreateExistingAmphibians();
 
             switch (selection)
             {
