@@ -13,6 +13,7 @@ namespace AnimalshelterOOP
         static void Main()
         {
             bool playAgain = true;
+            Mammalprogram programmammal = new();
             while (playAgain)
             {
                 Console.WriteLine("Welcome to the Animal shelter, choose between the three animalshelters to continue. \n -Mammalshelter (1) \n -Amphibianshelter(2) \n -Fishshelter(3)");
@@ -20,7 +21,6 @@ namespace AnimalshelterOOP
                 switch (userChoose)
                 {
                     case "1":
-                        Mammalprogram programmammal = new();
                         programmammal.RunGameMammal();
                         break;
                     case "2":
@@ -32,7 +32,6 @@ namespace AnimalshelterOOP
                         programfish.RunGameFish();
                         break;
                 }
-                
                 Console.WriteLine("Do you want to end this program? y/n");
                 string input = Console.ReadLine().ToLower();
 

@@ -12,13 +12,13 @@ namespace AnimalshelterOOP
         public static void CreateExistingMammal()
         {
             Dog newDog = new("leo", 1, "dog");
-            Console.WriteLine(newDog);
-            Lion newLion = new("rocky", 14, "lion");
-            Console.WriteLine(newLion);
-            Okapi newOkapi = new("rudolf mc donald", 8, "okapi");
-            Console.WriteLine(newOkapi);
-            Cat newCat = new("sissi", 12, "cat");
-            Console.WriteLine(newCat);
+            //Console.WriteLine(newDog);
+            Lion newLion = new("\nrocky", 14, "lion");
+            //Console.WriteLine(newLion);
+            Okapi newOkapi = new("\nrudolf mc donald", 8, "okapi");
+            //Console.WriteLine(newOkapi);
+            Cat newCat = new("\nsissi", 12, "cat");
+            //Console.WriteLine(newCat);
             
             mammalShelter.AddAnimal(newDog);
             mammalShelter.AddAnimal(newLion);
@@ -73,7 +73,7 @@ namespace AnimalshelterOOP
         }
         public void RunGameMammal()
         {
-            CreateExistingMammal();
+            /*CreateExistingMammal();*/ //this call doubles the entries
             Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3) \n - greet animal(4)");
             string selection = Console.ReadLine().ToLower();
 

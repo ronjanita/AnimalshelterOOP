@@ -12,13 +12,9 @@ namespace AnimalshelterOOP
             public static void CreateExistingFishs()
             {
                 Whaleshark newWhaleshark = new Whaleshark("kathi", 21, "whaleshark");
-                Console.WriteLine(newWhaleshark);
-                Tigershark newTigershark = new Tigershark("\nlilly", 4, "tigershark");
-                Console.WriteLine(newTigershark);
-                Stingray newStingray = new Stingray("\nralph", 9, "stingray");
-                Console.WriteLine(newStingray);
-                Toadfish newToadfish = new Toadfish("\npaul", 1, "stingray");
-                Console.WriteLine(newToadfish);
+                Tigershark newTigershark = new Tigershark("lilly", 4, "tigershark");
+                Stingray newStingray = new Stingray("ralph", 9, "stingray");
+                Toadfish newToadfish = new Toadfish("paul", 1, "stingray");
 
                 fishShelter.AddAnimal(newWhaleshark);
                 fishShelter.AddAnimal(newTigershark);
@@ -73,7 +69,7 @@ namespace AnimalshelterOOP
             }
             public void RunGameFish()
             {
-                CreateExistingFishs();
+                //CreateExistingFishs();
                 Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3) \n - greet animal(4)");
                 string selection = Console.ReadLine().ToLower();
 
