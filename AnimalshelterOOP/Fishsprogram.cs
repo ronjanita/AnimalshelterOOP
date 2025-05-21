@@ -13,11 +13,11 @@ namespace AnimalshelterOOP
             {
                 Whaleshark newWhaleshark = new Whaleshark("kathi", 21, "whaleshark");
                 Console.WriteLine(newWhaleshark);
-                Tigershark newTigershark = new Tigershark("lilly", 4, "tigershark");
+                Tigershark newTigershark = new Tigershark("\nlilly", 4, "tigershark");
                 Console.WriteLine(newTigershark);
-                Stingray newStingray = new Stingray("ralph", 9, "stingray");
+                Stingray newStingray = new Stingray("\nralph", 9, "stingray");
                 Console.WriteLine(newStingray);
-                Toadfish newToadfish = new Toadfish("paul", 1, "stingray");
+                Toadfish newToadfish = new Toadfish("\npaul", 1, "stingray");
                 Console.WriteLine(newToadfish);
 
                 fishShelter.AddAnimal(newWhaleshark);

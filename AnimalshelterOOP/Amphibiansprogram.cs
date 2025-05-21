@@ -13,11 +13,11 @@ namespace AnimalshelterOOP
         {
             Frog newFrog = new Frog("hans", 7, "frog");
             Console.WriteLine(newFrog);
-            Anaconda newAnaconda = new Anaconda("lisa", 2, "Anaconda");
+            Anaconda newAnaconda = new Anaconda("\nlisa", 2, "Anaconda");
             Console.WriteLine(newAnaconda);
-            Toad newToad = new Toad("peter", 6, "Toad");
+            Toad newToad = new Toad("\npeter", 6, "Toad");
             Console.WriteLine(newToad);
-            Caecilian newCaecilian = new Caecilian("jasper", 10, "caecilian");
+            Caecilian newCaecilian = new Caecilian("\njasper", 10, "caecilian");
             Console.WriteLine(newCaecilian);
 
             amphibianShelter.AddAnimal(newFrog);
