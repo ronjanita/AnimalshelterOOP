@@ -13,11 +13,11 @@ namespace AnimalshelterOOP
         {
             Dog newDog = new("leo", 1, "dog");
             //Console.WriteLine(newDog);
-            Lion newLion = new("\nrocky", 14, "lion");
+            Lion newLion = new("rocky", 14, "lion");
             //Console.WriteLine(newLion);
-            Okapi newOkapi = new("\nrudolf mc donald", 8, "okapi");
+            Okapi newOkapi = new("rudolf mc donald", 8, "okapi");
             //Console.WriteLine(newOkapi);
-            Cat newCat = new("\nsissi", 12, "cat");
+            Cat newCat = new("sissi", 12, "cat");
             //Console.WriteLine(newCat);
             
             mammalShelter.AddAnimal(newDog);

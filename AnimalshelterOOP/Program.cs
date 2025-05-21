@@ -14,6 +14,11 @@ namespace AnimalshelterOOP
         {
             bool playAgain = true;
             Mammalprogram programmammal = new();
+            Mammalprogram.CreateExistingMammal();
+            Amphibiansprogram programamphibian = new();
+            Amphibiansprogram.CreateExistingAmphibians();
+            Fishsprogram programfish = new();
+            Fishsprogram.CreateExistingFishs();
             while (playAgain)
             {
                 Console.WriteLine("Welcome to the Animal shelter, choose between the three animalshelters to continue. \n -Mammalshelter (1) \n -Amphibianshelter(2) \n -Fishshelter(3)");
@@ -24,18 +29,16 @@ namespace AnimalshelterOOP
                         programmammal.RunGameMammal();
                         break;
                     case "2":
-                        Amphibiansprogram programamphibian = new();
                         programamphibian.RunGameAmphibian();
                         break;
                     case "3":
-                        Fishsprogram programfish = new();
                         programfish.RunGameFish();
                         break;
                 }
                 Console.WriteLine("Do you want to end this program? y/n");
                 string input = Console.ReadLine().ToLower();
 
-                if(input == "y")
+                if (input == "y")
                 {
                     playAgain = false;
                 }
