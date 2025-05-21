@@ -14,7 +14,7 @@ namespace AnimalshelterOOP
                 Whaleshark newWhaleshark = new Whaleshark("kathi", 21, "whaleshark");
                 Tigershark newTigershark = new Tigershark("lilly", 4, "tigershark");
                 Stingray newStingray = new Stingray("ralph", 9, "stingray");
-                Toadfish newToadfish = new Toadfish("paul", 1, "stingray");
+                Toadfish newToadfish = new Toadfish("paul", 1, "toadfish");
 
                 fishShelter.AddAnimal(newWhaleshark);
                 fishShelter.AddAnimal(newTigershark);

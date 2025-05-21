@@ -12,7 +12,7 @@ namespace AnimalshelterOOP
         public Frog(string name, int age, string species) : base(name, age, species) { }
         public override void MakeSound()
         {
-            Console.WriteLine("quackquackS");
+            Console.WriteLine("quackquack");
         }
         public override string ToString()
         {

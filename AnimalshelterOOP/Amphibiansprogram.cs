@@ -12,8 +12,8 @@ namespace AnimalshelterOOP
         public static void CreateExistingAmphibians()
         {
             Frog newFrog = new Frog("hans", 7, "frog");
-            Anaconda newAnaconda = new Anaconda("lisa", 2, "Anaconda");
-            Toad newToad = new Toad("peter", 6, "Toad");
+            Anaconda newAnaconda = new Anaconda("lisa", 2, "anaconda");
+            Toad newToad = new Toad("peter", 6, "toad");
             Caecilian newCaecilian = new Caecilian("jasper", 10, "caecilian");
 
             amphibianShelter.AddAnimal(newFrog);
