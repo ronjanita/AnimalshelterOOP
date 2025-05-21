@@ -13,17 +13,13 @@ namespace AnimalshelterOOP
         {
             Dog newDog = new("leo", 1, "dog");
             Console.WriteLine(newDog);
-            newDog.MakeSound();
             Lion newLion = new("rocky", 14, "lion");
             Console.WriteLine(newLion);
-            newLion.MakeSound();
             Okapi newOkapi = new("rudolf mc donald", 8, "okapi");
             Console.WriteLine(newOkapi);
-            newOkapi.MakeSound();
             Cat newCat = new("sissi", 12, "cat");
             Console.WriteLine(newCat);
-            newCat.MakeSound();
-
+            
             mammalShelter.AddAnimal(newDog);
             mammalShelter.AddAnimal(newLion);
             mammalShelter.AddAnimal(newOkapi);
@@ -77,6 +73,7 @@ namespace AnimalshelterOOP
         }
         public void RunGameMammal()
         {
+            CreateExistingMammal();
             Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3) \n - greet animal(4)");
             string selection = Console.ReadLine().ToLower();
 

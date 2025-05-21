@@ -85,6 +85,7 @@ namespace AnimalshelterOOP
         {
             Console.WriteLine("Chose between: \n - add a new animal to the shelter(1) \n - adopt an animal from the shelter(2) \n - show all animals(3) \n - greet animal(4)");
             string selection = Console.ReadLine().ToLower();
+            CreateExistingAmphibians();
 
             switch (selection)
             {

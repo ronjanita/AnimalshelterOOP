@@ -13,10 +13,10 @@ namespace AnimalshelterOOP
         static void Main()
         {
             bool playAgain = true;
-            Console.WriteLine("Welcome to the Animal shelter, choose between the three animalshelters to continue. \n -Mammalshelter (1) \n -Amphibianshelter(2) \n Fishshelter(3)");
-            string userChoose = Console.ReadLine();
             while (playAgain)
             {
+                Console.WriteLine("Welcome to the Animal shelter, choose between the three animalshelters to continue. \n -Mammalshelter (1) \n -Amphibianshelter(2) \n -Fishshelter(3)");
+                string userChoose = Console.ReadLine();
                 switch (userChoose)
                 {
                     case "1":
